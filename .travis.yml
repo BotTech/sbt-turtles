@@ -5,10 +5,11 @@ jdk: openjdk8
 scala:
   - 2.12.11
 
-script: sbt test scripted
-
 jobs:
   include:
+    - stage: test
+      script: sbt test
+    - script: sbt scripted
     - stage: publish
       script: skip
       before_deploy:
