@@ -54,8 +54,26 @@ The artifacts are signed with key belonging to [BotTech]. Reach out to us if the
 
 This uses [sbt/sbt-bintray] to publish artifacts to Bintray and [ohnosequences/sbt-github-release] to publish to GitHub.
 
+## Refreshing From Giter8 Template
+
+If the [BotTech/sbt-autoplugin.g8] Giter8 template has been updated you can incorporate those new
+changes by doing:
+
+```shell script
+# Do not run the command if the working directory is not clean to avoid loosing any work.
+[ -z "$(git status --porcelain)" ] && g8 -f -o . \
+  '--pluginName=Turtles' \
+  '--name=sbt-turtles' \
+  '--organizationName=BotTech' \
+  '--organization=nz.co.bottech' \
+  '--package=nz.co.bottech.sbt.turtles' \
+  '--purpose=An sbt plugin for sharing settings between the meta-builds and the main build.' \
+  BotTech/sbt-autoplugin.g8
+```
+
 [BotTech]: https://github.com/BotTech
 [Bintray]: https://bintray.com
+[bottech/sbt-autoplugin.g8]: https://github.com/BotTech/sbt-autoplugin.g8
 [dwijnand/sbt-dynver]: https://github.com/dwijnand/sbt-dynver
 [GitHub]: https://github.com
 [GitHub - Signing Commits]: https://help.github.com/articles/signing-commits/
