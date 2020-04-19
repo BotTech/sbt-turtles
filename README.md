@@ -1,6 +1,6 @@
 # sbt-turtles
 
-[![Build Status]](https://travis-ci.org/BotTech/sbt-turtles)
+[![Build Status]](https://travis-ci.com/BotTech/sbt-turtles)
 [![Download]](https://bintray.com/bottech/sbt-plugins/sbt-turtles/_latestVersion)
 
 An sbt plugin for sharing settings between the meta-builds and the main build.
@@ -48,7 +48,7 @@ This plugin is distributed under an [Apache 2.0 License].
 See [licenses/README.md] for all third-party licenses.
 
 [apache 2.0 license]: LICENSE
-[build status]: https://travis-ci.org/BotTech/sbt-turtles.svg?branch=master
+[build status]: https://travis-ci.com/BotTech/sbt-turtles.svg?branch=master
 [bottech/sbt-autoplugin.g8]: https://github.com/BotTech/sbt-autoplugin.g8
 [contributing.md]: CONTRIBUTING.md
 [download]: https://api.bintray.com/packages/bottech/sbt-plugins/sbt-turtles/images/download.svg
@@ -65,4 +65,4 @@ See [licenses/README.md] for all third-party licenses.
 [scala]: https://www.scala-lang.org
 [scalacenter]: https://scala.epfl.ch
 [scaladex]: https://index.scala-lang.org
-[travis ci]: https://travis-ci.org
+[travis ci]: https://travis-ci.com
